@@ -49,7 +49,7 @@ body {
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;
-  font-style: 16px;
+  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -64,4 +64,39 @@ body {
 .input-box input:focus,
 .input-box input:valid {
   border-bottom: 2px solid #6c63ff;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label{
+  top: -15px;
+  left: 5px;
+  font-size: 12px;
+  color: #6c63ff;
+}
+
+.btn{
+  width: 100%;
+  padding: 10px;
+  background: #6c63ff;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover{
+  background: #5848d3;
+}
+
+.link{
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link a{
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 600;
 }
