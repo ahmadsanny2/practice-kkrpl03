@@ -13,16 +13,16 @@
         <h1 class="logo">Apotek Tarpan</h1>
         <ul class="nav-links">
             <li>
-                <a href="" class="active">Transaksi</a>
+                <a href="" class="active">Beranda</a>
+            </li>
+            <li>
+                <a href="" class="">Transaksi</a>
             </li>
             <li>
                 <a href="" class="">Tentang</a>
             </li>
             <li>
                 <a href="" class="">Kontak</a>
-            </li>
-            <li>
-                <a href="" class="">Beranda</a>
             </li>
             <li>
                 <button class="logout-btn" onclick="logout()">Logout</button>
@@ -69,6 +69,15 @@
     </footer>
 
     <script src="./public/js/main.js"></script>
+    <script>
+        function logout() {
+            if (confirm("Apakah Anda yakin ingin logout?")) {
+                sessionStorage.clear()
+
+                window.location.href = "/login.html"
+            }
+        }
+    </script>
 </body>
 
 </html>
